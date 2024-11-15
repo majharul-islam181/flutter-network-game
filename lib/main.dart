@@ -149,22 +149,21 @@ class _OfflineRunnerGameState extends State<OfflineRunnerGame> {
               AnimatedContainer(
                 alignment: Alignment(0, playerY),
                 duration: const Duration(milliseconds: 0),
-                child: Container(
-                  height: 50,
-                  width: 50,
-                  color: Colors.yellow,
+                child: Image.asset(
+                  'images/dinoo.png',
+                  height: 60,
                 ),
               ),
               // Obstacle
               AnimatedContainer(
-                alignment: Alignment(obstacleX, 1.0),
-                duration: const Duration(milliseconds: 0),
-                child: Container(
-                  height: 40,
-                  width: 40,
-                  color: Colors.red,
-                ),
-              ),
+                  alignment: Alignment(obstacleX, 1.0),
+                  duration: const Duration(milliseconds: 0),
+                  child: Image.asset(
+                    'images/cactac.png',
+                    height: 60,
+                    color: Colors.black.withOpacity(0.7),
+                  )),
+
               // Ground
               Align(
                 alignment: const Alignment(0, 1),
